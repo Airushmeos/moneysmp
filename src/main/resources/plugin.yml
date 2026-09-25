@@ -1,0 +1,23 @@
+name: moneysmp
+version: '${version}'
+
+main: at.Airushmeos.moneysmp.Moneysmp
+api-version: '26.1.2'
+load: POSTWORLD
+
+authors: [ Airushmeos ]
+description: Economy and Teams System for MoneySMP
+
+permissions:
+  moneysmp.admin:
+    description: Full access to all admin commands
+    default: op
+
+commands:
+  pay:
+    description: Pay money to another player
+    usage: /pay <player> <amount>
+  moneysmp:
+    description: Main command for MoneySMP
+    usage: /moneysmp
+    aliases: [msmp]
